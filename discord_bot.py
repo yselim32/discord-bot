@@ -36,10 +36,7 @@ async def roll(ctx, dice: str):
     result = ', '.join(str(random.randint(1, limit)) for r in range(rolls))
     await ctx.send(result)
 
-@bot.command()
-async def add(ctx, left: int, right: int):
-    """Adds two numbers together."""
-    await ctx.send(left + right)
+
 
 
 bot.run("")
